@@ -4,21 +4,14 @@
 (function () {
 	'use strict';
 	angular.module('inAppPurchases.service', [
-		'payments.resource',
-		'subscription.cancel.resource',
 		'LocalStorageModule',
-		'ionicLoading.service',
 		'function.service',
 		//configs
-		'inAppPurchases.config',
-		'date.config',
-		'themeableBrowser.config'
+		'inAppPurchases.config'
 	])
 		.service('InAppPurchasesService', function ($location, $ionicPopup,
-	                                                PaymentsResource, SubscriptionCancelResource,
-	                                                localStorageService, IonicLoadingService, FunctionService,
-	                                                IN_APP_PURCHASES, VIEW_DATE_CONFIG, IN_APP_PURCHASES_STRINGS,
-	                                                THEMEABLE_BROWSER_CONFIG, UNSUBSCRIBE_ADDRESS) {
+	                                                localStorageService, FunctionService,
+	                                                IN_APP_PURCHASES) {
 			var _self = this;
 			// to save a list of in-app purchases
 			var _IAP = [];

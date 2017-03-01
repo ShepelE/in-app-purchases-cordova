@@ -28,6 +28,7 @@ var config = {
         './app/common/checkConnection/CheckConnectionService.js',
         './app/common/loader/LoaderService.js',
         './app/common/ionicPopupWrapper/ionicPopupWrapper.service.js',
+        './app/common/functionService.js',
 
         './app/app.js'
     ],

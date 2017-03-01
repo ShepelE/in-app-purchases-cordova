@@ -16,6 +16,7 @@
         '400handlers',
         'termsOfUse.routes',
         'privacyPolicy.routes',
+        'function.service',
 
         'inAppPurchases.service'
     ];
