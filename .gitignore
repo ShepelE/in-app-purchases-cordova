@@ -1,0 +1,14 @@
+/bower_components/
+.idea/*
+/**/.idea
+/logs
+.DS_Store
+/**/.DS_Store
+/dist/
+/node_modules
+/backup_modules
+www.zip
+www
+/plugins
+/platforms
+/*.log
