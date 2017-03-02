@@ -9,7 +9,7 @@
 		//configs
 		'inAppPurchases.config'
 	])
-		.service('InAppPurchasesService', function ($location, $ionicPopup,
+		.service('InAppPurchasesService', function ($location, $ionicPopup, $q,
 	                                                localStorageService, FunctionService,
 	                                                IN_APP_PURCHASES) {
 			var _self = this;
@@ -52,9 +52,11 @@
 							// empty array - no available products
 						}
 						_self.getActiveSubscription();
+                        return _IAP;
 					}, function (err) {
 						// error getting a list of in-app purchases
 						_self.getActiveSubscription();
+						$q.reject(err);
 					});
 			};
 
