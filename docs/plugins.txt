@@ -4,3 +4,4 @@ cordova plugin add cordova-plugin-device
 cordova plugin add cordova-plugin-splashscreen
 cordova plugin add cordova-plugin-network-information
 cordova plugin add cordova-plugin-code-push@latest
+cordova plugin add cordova-plugin-inapppurchase@1.1.0
